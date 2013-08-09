@@ -954,7 +954,7 @@ To raise this error, the Query Server have to answer::
 Logging
 =======
 
-At any time, the Query Server may send some information that will be saved in
+At any time, but not inside `reset` or `add_fun` commands, the Query Server may send some information that will be saved in
 CouchDB's log file. This is done by sending a special object with just one
 field, log, on a separate line::
 
